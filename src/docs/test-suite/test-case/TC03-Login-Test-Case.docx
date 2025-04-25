@@ -1,0 +1,39 @@
+Test Case ID: TC03
+Title: Login with Locked Out User
+
+1. Objective
+   - To verify that locked out users cannot access the application
+   - To validate the error message for locked out users
+
+2. Preconditions
+   - User has access to the SauceDemo application
+   - Browser is launched and cache is cleared
+   - User is on the login page
+   - Locked out user credentials are available
+
+3. Test Steps
+   1. Launch the SauceDemo application
+   2. Enter "locked_out_user" in the Username field
+   3. Enter "secret_sauce" in the Password field
+   4. Click the "Login" button
+   5. Observe the application behavior
+
+4. Expected Results
+   - User should not be logged in
+   - Error message "Epic sadface: Sorry, this user has been locked out." should be displayed
+   - User should remain on the login page
+   - Username and password fields should be cleared
+
+5. Test Data
+   Username: locked_out_user
+   Password: secret_sauce
+
+6. Priority: Medium
+
+7. Execution Type: Manual
+
+8. References
+   - Requirement: REQ-001 (User Authentication)
+   - Test Suite: TS-001 (User Login Test Suite)
+
+9. Status: Not Executed 

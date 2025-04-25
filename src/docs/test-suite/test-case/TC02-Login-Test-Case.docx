@@ -1,0 +1,39 @@
+Test Case ID: TC02
+Title: Invalid Login with Wrong Password
+
+1. Objective
+   - To verify that the system properly handles login attempts with incorrect password
+   - To validate the error message for invalid credentials
+
+2. Preconditions
+   - User has access to the SauceDemo application
+   - Browser is launched and cache is cleared
+   - User is on the login page
+   - Standard user username is available
+
+3. Test Steps
+   1. Launch the SauceDemo application
+   2. Enter "standard_user" in the Username field
+   3. Enter "wrong_password" in the Password field
+   4. Click the "Login" button
+   5. Observe the application behavior
+
+4. Expected Results
+   - User should not be logged in
+   - Error message "Epic sadface: Username and password do not match any user in this service" should be displayed
+   - User should remain on the login page
+   - Username and password fields should be cleared
+
+5. Test Data
+   Username: standard_user
+   Password: wrong_password
+
+6. Priority: High
+
+7. Execution Type: Manual
+
+8. References
+   - Requirement: REQ-001 (User Authentication)
+   - Test Suite: TS-001 (User Login Test Suite)
+
+9. Status: Not Executed 

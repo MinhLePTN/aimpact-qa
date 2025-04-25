@@ -1,0 +1,102 @@
+Test Suite ID: TS-001
+Test Suite Title: SauceDemo User Login Test Suite
+
+1. Module or Feature: User Login
+   - This test suite covers the user authentication functionality of the SauceDemo application
+   - Focuses on login form validation, authentication process, and error handling
+
+2. Objective
+   - To verify that users can successfully log in to the SauceDemo application
+   - To ensure proper validation of login credentials
+   - To verify error handling for invalid login attempts
+   - To validate the security aspects of the login process
+
+3. Checklist
+   a. Login Form Elements
+      - Username field is present and enabled
+      - Password field is present and enabled
+      - Login button is present and enabled
+      - Remember me checkbox is present (if applicable)
+   
+   b. Valid Login Scenarios
+      - Login with valid standard user credentials
+      - Login with valid locked out user credentials
+      - Login with valid problem user credentials
+      - Login with valid performance glitch user credentials
+   
+   c. Invalid Login Scenarios
+      - Login with invalid username
+      - Login with invalid password
+      - Login with empty username
+      - Login with empty password
+      - Login with both fields empty
+   
+   d. Error Handling
+      - Verify error message for invalid credentials
+      - Verify error message for locked out user
+      - Verify error message for empty fields
+   
+   e. Security
+      - Password field should mask input
+      - Verify session timeout (if applicable)
+      - Verify logout functionality
+
+4. Test Environment
+   Browser Requirements:
+   - Chrome (latest version)
+   - Firefox (latest version)
+   - Edge (latest version)
+   - Safari (latest version)
+
+   Operating System Requirements:
+   - Windows 10/11
+   - macOS (latest version)
+   - Linux (Ubuntu latest LTS)
+
+5. Test Data Requirements
+   Valid Test Accounts:
+   - Standard User:
+     Username: standard_user
+     Password: secret_sauce
+   
+   - Locked Out User:
+     Username: locked_out_user
+     Password: secret_sauce
+   
+   - Problem User:
+     Username: problem_user
+     Password: secret_sauce
+   
+   - Performance Glitch User:
+     Username: performance_glitch_user
+     Password: secret_sauce
+
+   Invalid Test Data:
+   - Invalid Username: invalid_user
+   - Invalid Password: invalid_password
+
+6. Execution Type: Manual
+   - All test cases will be executed manually
+   - Each test case should be documented with screenshots
+   - Test results should be recorded in the test management system
+
+7. Pass/Fail Criteria
+   Pass Criteria:
+   - All test cases execute successfully
+   - No critical defects found
+   - All validation messages are correct
+   - Login process completes within acceptable time limits
+   
+   Fail Criteria:
+   - Any critical test case fails
+   - Security vulnerabilities are identified
+   - Login process takes longer than expected
+   - Incorrect error messages are displayed
+   - System crashes during login attempts
+
+8. Additional Notes
+   - Testers should clear browser cache before each test
+   - Each test case should be executed in a fresh browser session
+   - Document any unexpected behavior or issues
+   - Include screenshots for failed test cases
+   - Record the exact time taken for login process 

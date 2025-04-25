@@ -1,0 +1,38 @@
+Test Case ID: TC04
+Title: Login with Empty Credentials
+
+1. Objective
+   - To verify that the system properly handles login attempts with empty credentials
+   - To validate the error message for empty fields
+
+2. Preconditions
+   - User has access to the SauceDemo application
+   - Browser is launched and cache is cleared
+   - User is on the login page
+
+3. Test Steps
+   1. Launch the SauceDemo application
+   2. Leave the Username field empty
+   3. Leave the Password field empty
+   4. Click the "Login" button
+   5. Observe the application behavior
+
+4. Expected Results
+   - User should not be logged in
+   - Error message "Epic sadface: Username is required" should be displayed
+   - User should remain on the login page
+   - Fields should remain empty
+
+5. Test Data
+   Username: (empty)
+   Password: (empty)
+
+6. Priority: Medium
+
+7. Execution Type: Manual
+
+8. References
+   - Requirement: REQ-001 (User Authentication)
+   - Test Suite: TS-001 (User Login Test Suite)
+
+9. Status: Not Executed 
